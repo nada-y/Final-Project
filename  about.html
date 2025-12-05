@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me – Nody Elmi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-main">
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-bold">Nody Elmi</span>
+      <span class="logo-light">/ Portfolio</span>
+    </a>
+
+    <nav class="nav-box">
+      <a href="projects.html" class="nav-item">Projects</a>
+      <a href="about.html" class="nav-item nav-active">About Me</a>
+      <a href="contact.html" class="nav-item">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <section class="about-wrapper">
+    <h1 class="hero-heading">
+      I design simple, calm interfaces<br>
+      and bring them to life in code.
+    </h1>
+
+    <div class="about-text">
+      <p>
+        I’m a UX Designer and Frontend Developer studying Information Science.
+        My work focuses on human-centered projects, especially around students,
+        learning, and digital literacy.
+      </p>
+      <p>
+        I enjoy exploring how typography, layout, and small details can make a
+        website feel welcoming and easy to use. I design in Figma and build
+        with semantic HTML and modern CSS.
+      </p>
+      <p>
+        I am currently based in Lansing, MI and open to internships and
+        collaborations.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Nody Elmi. All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
