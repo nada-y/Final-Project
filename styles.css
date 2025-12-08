@@ -1,4 +1,4 @@
-/* === Base === */
+/* ==== GLOBAL ==== */
 
 *,
 *::before,
@@ -6,24 +6,23 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 16px;
-}
-
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #111111;
+  font-family: system-ui, sans-serif;
 }
 
 .bg-main {
-  background-color: #bcb5ac; /* warm grey like your Figma */
+  background: #bcb5ac;
 }
 
-/* === Header & nav === */
+.page {
+  padding: 40px 60px;
+}
+
+/* ==== HEADER ==== */
 
 .site-header {
-  padding: 24px 64px 0;
+  padding: 20px 60px 0;
 }
 
 .header-inner {
@@ -34,8 +33,8 @@ body {
 
 .logo {
   text-decoration: none;
-  color: #111111;
-  font-size: 14px;
+  color: #111;
+  font-size: 15px;
 }
 
 .logo-bold {
@@ -46,18 +45,17 @@ body {
   font-weight: 300;
 }
 
-/* white nav box in top-right */
+/* NAV BOX */
 .nav-box {
   display: flex;
-  background: #ffffff;
-  padding: 12px 40px;
-  gap: 48px;
-  font-size: 14px;
+  background: #fff;
+  padding: 14px 40px;
+  gap: 40px;
 }
 
 .nav-item {
+  color: #000;
   text-decoration: none;
-  color: #111111;
   font-weight: 600;
 }
 
@@ -65,26 +63,15 @@ body {
   text-decoration: underline;
 }
 
-.nav-active {
-  text-decoration: underline;
-}
-
-/* === Layout helpers === */
-
-.page {
-  padding: 40px 64px 64px;
-}
-
-/* === Hero (home) === */
+/* ==== HERO SECTION ==== */
 
 .hero-row {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.3fr);
-  gap: 32px;
-  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  background: #e8e1d7;
+  padding: 30px;
   margin-bottom: 40px;
-  background: #e8e1d7; /* lighter panel behind hero in Figma */
-  padding: 32px;
 }
 
 .hero-image-card img {
@@ -93,192 +80,90 @@ body {
 }
 
 .hero-heading {
-  font-family: "Times New Roman", "Georgia", serif;
-  font-size: 40px;
-  font-weight: 500;
+  font-family: "Times New Roman", serif;
   font-style: italic;
-  line-height: 1.2;
-  margin: 0 0 24px;
+  font-size: 40px;
+  margin: 0 0 20px;
 }
 
 .btn-primary {
-  border: none;
   background: #4a3a2f;
-  color: #ffffff;
-  padding: 12px 32px;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
   cursor: pointer;
-  font-size: 14px;
 }
 
-/* === Projects preview row (home) === */
+/* ==== PROJECT CARDS ==== */
 
-.projects-row {
+.project-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  margin-top: 32px;
 }
 
+/* Card wrapper */
 .project-card {
   background: #e8e1d7;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-.project-card img {
+/* Image always same height */
+.project-image img {
   width: 100%;
-  display: block;
+  height: 240px;
+  object-fit: cover;
 }
 
-.project-card-body {
-  padding: 16px 20px 20px;
+/* Text area */
+.project-info {
+  padding: 16px 20px;
+  flex-grow: 1;
 }
 
-.project-title {
-  font-size: 16px;
+.project-info h2 {
+  font-size: 18px;
   margin: 0 0 8px;
-  color: #5a2f22; /* brownish title like your Figma */
+  color: #5a2f22;
 }
 
-.project-text {
+.project-info p {
+  margin: 0;
   font-size: 14px;
-  margin: 0 0 16px;
+  line-height: 1.5;
+}
+
+/* Button sits at bottom */
+.project-footer {
+  padding: 0 20px 20px;
+  margin-top: auto;
 }
 
 .btn-ghost {
-  display: inline-block;
-  text-decoration: none;
   background: #4a3a2f;
-  color: #ffffff;
-  font-size: 13px;
+  color: #fff;
+  text-decoration: none;
   padding: 8px 20px;
-}
-
-/* === Projects page (4 cards) === */
-
-.projects-page-row {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 24px;
-}
-
-/* === About page === */
-
-.about-wrapper {
-  max-width: 800px;
-}
-
-.about-wrapper .hero-heading {
-  margin-bottom: 32px;
-}
-
-.about-text p {
-  font-size: 15px;
-  margin-bottom: 16px;
-}
-
-/* === Contact page === */
-
-.contact-row {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.2fr);
-  gap: 40px;
-  align-items: center;
-}
-
-.script-text {
-  font-family: "Times New Roman", "Georgia", serif;
-  font-style: italic;
-  font-size: 26px;
-  line-height: 1.6;
-}
-
-/* white form card */
-
-.contact-card {
-  background: #ffffff;
-  border-radius: 6px;
-  padding: 24px 28px 28px;
-}
-
-.contact-form {
-  display: grid;
-  gap: 10px;
-}
-
-.contact-form label {
+  display: inline-block;
   font-size: 14px;
 }
 
-.contact-form input,
-.contact-form textarea {
-  border-radius: 4px;
-  border: 1px solid #dddddd;
-  padding: 8px 10px;
-  font-family: inherit;
-  font-size: 14px;
-}
-
-.btn-submit {
-  margin-top: 12px;
-  padding: 10px;
-  border: none;
-  background: #111111;
-  color: #ffffff;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-/* === Footer === */
-
-.site-footer {
-  padding: 16px 64px 32px;
-  font-size: 12px;
-}
-
-/* === Responsive === */
+/* ==== RESPONSIVE ==== */
 
 @media (max-width: 900px) {
-  .site-header {
-    padding: 16px 24px 0;
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .page {
-    padding: 24px;
-  }
-
-  .header-inner {
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
-  }
-
-  .nav-box {
-    padding: 10px 16px;
-    gap: 24px;
-  }
-
-  .hero-row,
-  .projects-row,
-  .projects-page-row,
-  .contact-row {
+  .hero-row {
     grid-template-columns: 1fr;
-  }
-
-  .projects-page-row {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .hero-heading {
-    font-size: 32px;
   }
 }
 
 @media (max-width: 600px) {
-  .projects-page-row {
-    grid-template-columns: 1fr;
-  }
-
-  .projects-row {
+  .project-grid {
     grid-template-columns: 1fr;
   }
 }
