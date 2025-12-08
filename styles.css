@@ -37,6 +37,10 @@ body {
   font-size: 15px;
 }
 
+.logo img {
+  height: 32px;
+}
+
 .logo-bold {
   font-weight: 700;
 }
