@@ -166,6 +166,72 @@ display: block;
   font-size: 14px;
 }
 
+/* === CONTACT PAGE LAYOUT === */
+
+.contact-row {
+  display: grid;
+  grid-template-columns: 1.1fr 1.2fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* left side text */
+.contact-intro {
+  padding-right: 20px;
+}
+
+.contact-text {
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 26px;
+  line-height: 1.6;
+}
+
+/* right side card */
+.contact-card {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 24px 28px 28px;
+}
+
+/* form layout */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-group label {
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 8px 10px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+
+/* submit button */
+.btn-submit {
+  margin-top: 8px;
+  align-self: flex-start;
+  padding: 10px 24px;
+  border: none;
+  background: #111111;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
 /* ==== RESPONSIVE ==== */
 
 @media (max-width: 900px) {
@@ -181,5 +247,15 @@ display: block;
 @media (max-width: 600px) {
   .project-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+    margin-top: 16px;
   }
 }
