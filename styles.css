@@ -35,7 +35,7 @@ body {
   display: block;
   max-width: 100%;
   height: auto;
-  max-height: 32px; /* desktop size */
+  max-height: 40px; 
 }
 .logo {
   text-decoration: none;
