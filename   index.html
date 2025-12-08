@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="bg-main">
+
 <header class="site-header">
   <div class="header-inner">
     <a href="index.html" class="logo">
@@ -23,10 +25,11 @@
 </header>
 
 <main class="page">
-  <!-- hero block -->
+
+
   <section class="hero-row">
     <div class="hero-image-card">
-      <img src="imges/  hero-project.png"" alt="Preview of my featured project">
+      <img src="images/hero.png" alt="Featured Project">
     </div>
 
     <div class="hero-text-block">
@@ -34,56 +37,66 @@
         I’m a UX Designer and Frontend Developer<br>
         based in Lansing, MI.
       </h1>
+
       <button class="btn-primary" onclick="location.href='contact.html'">
         Let’s Contact
       </button>
     </div>
   </section>
 
-  <!-- projects preview -->
-  <section class="projects-row">
+  
+  <section class="project-grid">
+
+ 
     <article class="project-card">
-      <img src="imges/ project-1.png" alt="Apparel store prototype">
-      <div class="project-card-body">
-        <h2 class="project-title">Apparel Store / prototype</h2>
-        <p class="project-text">
-          Prototype for a commerce platform using Figma Prototype.
-        </p>
-        <a href="projects.html" class="btn-ghost">More</a>
+      <div class="project-image">
+        <img src="images/project-1.png" alt="Apparel Project">
+      </div>
+
+      <div class="project-info">
+        <h2>Apparel Store / prototype</h2>
+        <p>Prototype for a commerce platform using a Figma prototype.</p>
+      </div>
+
+      <div class="project-footer">
+        <a class="btn-ghost" href="projects.html">More</a>
       </div>
     </article>
 
+   
     <article class="project-card">
-      <img src="imges/project-2.png" alt="Responsive weblog design">
-      <div class="project-card-body">
-        <h2 class="project-title">Responsive Design</h2>
-        <p class="project-text">
-          I created my personal weblog as a responsive website.
-        </p>
-        <a href="projects.html" class="btn-ghost">More</a>
+      <div class="project-image">
+        <img src="images/project-2.png" alt="Responsive Weblog">
+      </div>
+
+      <div class="project-info">
+        <h2>Responsive Design</h2>
+        <p>A responsive personal weblog created with HTML5 and CSS3.</p>
+      </div>
+
+      <div class="project-footer">
+        <a class="btn-ghost" href="projects.html">More</a>
       </div>
     </article>
 
+   
     <article class="project-card">
-      <img src="imges/project-3.png" alt="Everyday carry project">
-      <div class="project-card-body">
-        <h2 class="project-title">Everyday Carry</h2>
-        <p class="project-text">
-          I extended a class GitHub repository and added new pages
-          to build a complete website.
-        </p>
-        <a href="projects.html" class="btn-ghost">More</a>
+      <div class="project-image">
+        <img src="images/project-3.png" alt="Everyday Carry">
+      </div>
+
+      <div class="project-info">
+        <h2>Everyday Carry</h2>
+        <p>A storytelling site about my everyday carry with a focus on color and typography.</p>
+      </div>
+
+      <div class="project-footer">
+        <a class="btn-ghost" href="projects.html">More</a>
       </div>
     </article>
+
   </section>
 </main>
 
-<footer class="site-footer">
-  <p>&copy; <span id="year"></span> Nody Elmi. All rights reserved.</p>
-</footer>
-
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
