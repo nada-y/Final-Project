@@ -65,29 +65,35 @@ body {
 
 /* ==== HERO SECTION ==== */
 
-.hero-row {
+.hero-panel {
   display: flex;
-  background: #e8e1d7;   
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.hero-inner {
+  background: #e8e1d7;
+  display: flex;
+  min-height: 380px;
+  width: 90%;
+  max-width: 1200px;
   padding: 60px;
   gap: 40px;
 }
 
-
-.hero-image-card {
-  background: #111;      
-  width: 300px;         
-  height: 350px;         
+.hero-left {
+  width: 300px !important;
+  height: 350px !important;
+  background: #111 !important;
 }
 
-
-.hero-image-card img {
+.hero-row img {
   display: none;
 }
 
-/* right text area */
 .hero-text-block {
   flex: 1;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .hero-heading {
