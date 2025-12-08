@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="bg-main">
+
+<!-- Header -->
 <header class="site-header">
   <div class="header-inner">
     <a href="index.html" class="logo">
@@ -15,7 +18,7 @@
     </a>
 
     <nav class="nav-box">
-      <a href="projects.html" class="nav-item nav-active">Projects</a>
+      <a href="projects.html" class="nav-item">Projects</a>
       <a href="about.html" class="nav-item">About Me</a>
       <a href="contact.html" class="nav-item">Contact</a>
     </nav>
@@ -23,61 +26,76 @@
 </header>
 
 <main class="page">
-  <section class="projects-page-row">
-    <article class="project-card">
-      <img src="imges/ project-1.png" alt="Apparel store prototype">
-      <div class="project-card-body">
-        <h2 class="project-title">Apparel Store / prototype</h2>
-        <p class="project-text">
-          Prototype for a commerce platform using Figma Prototype.
-        </p>
-        <a href="#" class="btn-ghost">More</a>
-      </div>
-    </article>
 
-    <article class="project-card">
-      <img src="imges/project-2.png" alt="Responsive weblog design">
-      <div class="project-card-body">
-        <h2 class="project-title">Responsive Design</h2>
-        <p class="project-text">
-          A responsive personal weblog created with HTML5 and CSS3.
-        </p>
-        <a href="#" class="btn-ghost">More</a>
-      </div>
-    </article>
+<!-- PROJECT GRID -->
+<section class="project-grid">
 
-    <article class="project-card">
-      <img src="imges/project-3.png" alt="Everyday carry project">
-      <div class="project-card-body">
-        <h2 class="project-title">Everyday Carry</h2>
-        <p class="project-text">
-          A storytelling site explaining why I carry my water bottle every day,
-          with an emphasis on color and typography.
-        </p>
-        <a href="#" class="btn-ghost">More</a>
-      </div>
-    </article>
+  <!-- Card 1 -->
+  <article class="project-card">
+    <div class="project-image">
+      <img src="images/project-1.png" alt="Apparel Store prototype">
+    </div>
 
-    <article class="project-card">
-      <img src="imges/project-4.png" alt="Framework challenge project">
-      <div class="project-card-body">
-        <h2 class="project-title">Framework challenge</h2>
-        <p class="project-text">
-          I used HTML5 and a CSS framework to build and design an educational
-          webpage.
-        </p>
-        <a href="#" class="btn-ghost">More</a>
-      </div>
-    </article>
-  </section>
+    <div class="project-info">
+      <h2>Apparel Store / prototype</h2>
+      <p>Prototype for a commerce platform using a Figma prototype.</p>
+    </div>
+
+    <div class="project-footer">
+      <a class="btn-ghost" href="#">More</a>
+    </div>
+  </article>
+
+  <!-- Card 2 -->
+  <article class="project-card">
+    <div class="project-image">
+      <img src="images/project-2.png" alt="Responsive Weblog">
+    </div>
+
+    <div class="project-info">
+      <h2>Responsive Design</h2>
+      <p>A responsive personal weblog created with HTML5 and CSS3.</p>
+    </div>
+
+    <div class="project-footer">
+      <a class="btn-ghost" href="#">More</a>
+    </div>
+  </article>
+
+  <!-- Card 3 -->
+  <article class="project-card">
+    <div class="project-image">
+      <img src="images/project-3.png" alt="Everyday Carry Site">
+    </div>
+
+    <div class="project-info">
+      <h2>Everyday Carry</h2>
+      <p>A storytelling site explaining my everyday carry with a focus on visuals and typography.</p>
+    </div>
+
+    <div class="project-footer">
+      <a class="btn-ghost" href="#">More</a>
+    </div>
+  </article>
+
+  <!-- Card 4 -->
+  <article class="project-card">
+    <div class="project-image">
+      <img src="images/project-4.png" alt="Framework Challenge">
+    </div>
+
+    <div class="project-info">
+      <h2>Framework Challenge</h2>
+      <p>I used HTML5 and a CSS framework to build an educational webpage.</p>
+    </div>
+
+    <div class="project-footer">
+      <a class="btn-ghost" href="#">More</a>
+    </div>
+  </article>
+
+</section>
 </main>
 
-<footer class="site-footer">
-  <p>&copy; <span id="year"></span> Nody Elmi. All rights reserved.</p>
-</footer>
-
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
