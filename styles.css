@@ -81,7 +81,10 @@ body {
 
 
 .hero-image-card img {
-  display: none;
+
+width: 100%;
+display: block;
+
 }
 
 /* right text area */
